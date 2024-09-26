@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strong Password Generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <p>Do you want to create hard to crack passwords?</p>
+        <p>Then use our STRONG PASSORD GENERATOR!!!</p>
+        <div class="password-display">
+            <input type="text" id="password-output" readonly>
+            <button id="copy-btn">Copy</button>
+        </div>
+        <div class="options">
+            <label for="length">Password Length:</label>
+            <input type="number" id="length" min="8" max="32" value="16">
+            
+            <label for="uppercase">
+                <input type="checkbox" id="uppercase" unchecked> Include Uppercase
+            </label>
+            
+            <label for="lowercase">
+                <input type="checkbox" id="lowercase" unchecked> Include Lowercase
+            </label>
+            
+            <label for="numbers">
+                <input type="checkbox" id="numbers" unchecked> Include Numbers
+            </label>
+            
+            <label for="special">
+                <input type="checkbox" id="special" unchecked> Include Special Characters
+            </label>
+        </div>
+        <button id="generate-btn">Generate Password</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
